@@ -50,10 +50,10 @@ function showHistory(){
         list.appendChild(li);
     });
 }
-function clearHistory(){
-    localStorage.removeItem("history");
-    showHistory();
-}
+// function clearHistory(){
+//     localStorage.removeItem("history");
+//     showHistory();
+// }
 function toggleTheme(){
     document.body.classList.toggle("light");
 }

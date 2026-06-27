@@ -109,7 +109,7 @@ body{
     color:white;
     font-size:20px;
 } */
-.history{
+/* .history{
     margin-top:15px;
     background:#111827;
     border-radius:15px;
@@ -129,7 +129,7 @@ body{
 #historyList li{
     padding:5px;
     border-bottom:1px solid #333;
-}
+} */
 /* Mobile Responsive */
 
 @media(max-width:420px){
