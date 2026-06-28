@@ -97,7 +97,7 @@ body{
 .zero{
     grid-column: span 2;
 }
-/* .theme-btn{
+.theme-btn{
     position:absolute;
     top:20px;
     width:45px;
@@ -106,10 +106,22 @@ body{
     border:none;
     cursor:pointer;
     background:#374151;
-    color:white;
+    color: white;
+    font-size:20px;
+}
+/* .theme-btn1{
+    position:absolute;
+    top:20px;
+    margin-left: 15%;   
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    border:none;
+    cursor:pointer;
+    background:#374151;
     font-size:20px;
 } */
-/* .history{
+.history{
     margin-top:15px;
     background:#111827;
     border-radius:15px;
@@ -129,7 +141,7 @@ body{
 #historyList li{
     padding:5px;
     border-bottom:1px solid #333;
-} */
+}
 /* Mobile Responsive */
 
 @media(max-width:420px){

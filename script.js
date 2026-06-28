@@ -20,7 +20,10 @@ function backspace(){
 }
 function calculate(){
     try{
-        let exp = display.value.replace(/÷/g,"/").replace(/x/g,"*");
+        let exp = display.value
+        .replace(/÷/g,"/")
+        .replace(/x/g,"*");
+
         let result = eval(exp);
         if(result.toString().includes(".")){
             result = parseFloat(result.toFixed(4));
@@ -32,6 +35,8 @@ function calculate(){
          display.value = "Error";
     }
 }
+
+
 function addHistory(exp,result){
     let history = JSON.parse(localStorage.getItem("history")) || [];
     history.push(`${exp} = ${result}`);
@@ -50,10 +55,11 @@ function showHistory(){
         list.appendChild(li);
     });
 }
-// function clearHistory(){
-//     localStorage.removeItem("history");
-//     showHistory();
-// }
+
+function clearHistory(){
+    localStorage.removeItem("history");
+    showHistory();
+}
 function toggleTheme(){
     document.body.classList.toggle("light");
 }
@@ -62,4 +68,4 @@ document.addEventListener("keydown",e=>{
     if(e.key=="Enter") calculate();
     if(e.key=="Backspace") backspace();
 });
-showHistory();
+showHistory();   
